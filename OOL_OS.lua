@@ -9,7 +9,6 @@ local main = basalt.createFrame(monitor)
 -- Container element
 local element1 = main:addContainer()
     :setSize(60, 25)
-    :setText("Current Power Generation:")
 
 -- Container element
 local element2 = main:addContainer()
