@@ -2,8 +2,11 @@
 local basalt = require("basalt")
 local monitor = peripheral.find("monitor")
 
+monitor.setTextScale(0.5)
+term.redirect(monitor)
+
 -- Create main frame
-local main = basalt.createFrame(monitor)
+local main = basalt.createFrame()
     :setSize(61, 26)
 
 -- Container element
