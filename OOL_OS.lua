@@ -37,12 +37,14 @@ local element6 = main:addLabel()
     :setPosition(2, 2)
     :setSize(25, 1)
     :setText("Current Power Generation:")
+    :setForeground(colors.white)
 
 -- Label element
 local element7 = main:addLabel()
     :setPosition(2, 3)
     :setSize(14, 1)
     :setText("Power Surplus: ")
+    :setForeground(colors.white)
 
 -- Label element
 local element8 = main:addLabel()
@@ -75,6 +77,7 @@ local element12 = main:addLabel()
     :setPosition(2, 6)
     :setSize(22, 1)
     :setText("Total Market Holdings: ")
+    :setForeground(colors.white)
 
 -- Label element
 local element13 = main:addLabel()
