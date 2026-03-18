@@ -19,12 +19,14 @@ local element2 = main:addBigFont()
     :setSize(15, 2)
     :setText("OOL OS")
     :setFontSize(10)
+    :setForeground(colors.white)
 
 -- Label element
 local element3 = main:addLabel()
     :setPosition(1, 7)
     :setSize(25, 1)
     :setText("Current Power Generation:")
+    :setForeground(colors.white)
 
 -- Label element
 local element4 = main:addLabel()
@@ -37,6 +39,7 @@ local element5 = main:addLabel()
     :setPosition(1, 8)
     :setSize(14, 1)
     :setText("Power Surplus:")
+    :setForeground(colors.white)
 
 -- Label element
 local element6 = main:addLabel()
@@ -44,29 +47,6 @@ local element6 = main:addLabel()
     :setText("n/a")
     :setForeground(colors.red)
 
--- BigFont element
-local element7 = main:addBigFont()
-    :setPosition(1, 3)
-    :setSize(20, 2)
-    :setText("Power Infomation")
-
--- Container element
-local element8 = main:addContainer()
-    :setPosition(1, 5)
-    :setSize(20, 1)
-    :setBackground(colors.cyan)
-
--- BigFont element
-local element9 = main:addBigFont()
-    :setPosition(1, 15)
-    :setSize(21, 2)
-    :setText("Stock Information")
-
--- Container element
-local element10 = main:addContainer()
-    :setPosition(1, 17)
-    :setSize(20, 1)
-    :setBackground(colors.cyan)
 
 -- Start the UI
 basalt.run()
