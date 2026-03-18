@@ -7,94 +7,66 @@ term.redirect(monitor)
 
 -- Create main frame
 local main = basalt.createFrame()
-    :setSize(61, 26)
+    :setSize(121, 52)
 
 -- Container element
 local element1 = main:addContainer()
-    :setSize(60, 25)
+    :setSize(121, 52)
 
--- Container element
-local element2 = main:addContainer()
-    :setSize(61, 1)
-    :setBackground(colors.cyan)
+-- BigFont element
+local element2 = main:addBigFont()
+    :setPosition(54, 26)
+    :setSize(15, 2)
+    :setText("OOL OS")
+    :setFontSize(10)
 
--- Container element
-local element3 = main:addContainer()
-    :setSize(1, 26)
-    :setBackground(colors.cyan)
+-- Label element
+local element3 = main:addLabel()
+    :setPosition(1, 7)
+    :setSize(25, 1)
+    :setText("Current Power Generation:")
 
--- Container element
-local element4 = main:addContainer()
-    :setPosition(61, 1)
-    :setSize(1, 26)
-    :setBackground(colors.cyan)
+-- Label element
+local element4 = main:addLabel()
+    :setPosition(26, 7)
+    :setText("n/a")
+    :setForeground(colors.red)
 
--- Container element
-local element5 = main:addContainer()
-    :setPosition(1, 26)
-    :setSize(61, 1)
-    :setBackground(colors.cyan)
+-- Label element
+local element5 = main:addLabel()
+    :setPosition(1, 8)
+    :setSize(14, 1)
+    :setText("Power Surplus:")
 
 -- Label element
 local element6 = main:addLabel()
-    :setPosition(2, 2)
-    :setSize(25, 1)
-    :setText("Current Power Generation:")
-    :setForeground(colors.white)
-
--- Label element
-local element7 = main:addLabel()
-    :setPosition(2, 3)
-    :setSize(14, 1)
-    :setText("Power Surplus: ")
-    :setForeground(colors.white)
-
--- Label element
-local element8 = main:addLabel()
-    :setPosition(27, 2)
-    :setSize(4, 1)
+    :setPosition(26, 8)
     :setText("n/a")
-    :setForeground(colors.lightBlue)
+    :setForeground(colors.red)
 
--- Label element
-local element9 = main:addLabel()
-    :setPosition(16, 3)
-    :setSize(4, 1)
-    :setText("n/a")
-    :setForeground(colors.lightBlue)
+-- BigFont element
+local element7 = main:addBigFont()
+    :setPosition(1, 3)
+    :setSize(20, 2)
+    :setText("Power Infomation")
+
+-- Container element
+local element8 = main:addContainer()
+    :setPosition(1, 5)
+    :setSize(20, 1)
+    :setBackground(colors.cyan)
+
+-- BigFont element
+local element9 = main:addBigFont()
+    :setPosition(1, 15)
+    :setSize(21, 2)
+    :setText("Stock Information")
 
 -- Container element
 local element10 = main:addContainer()
-    :setPosition(2, 4)
-    :setSize(29, 1)
-    :setBackground(colors.brown)
-
--- Container element
-local element11 = main:addContainer()
-    :setPosition(31, 2)
-    :setSize(1, 3)
-    :setBackground(colors.brown)
-
--- Label element
-local element12 = main:addLabel()
-    :setPosition(2, 6)
-    :setSize(22, 1)
-    :setText("Total Market Holdings: ")
-    :setForeground(colors.white)
-
--- Label element
-local element13 = main:addLabel()
-    :setPosition(24, 6)
-    :setSize(25, 1)
-    :setText("(data collection witheld)")
-    :setForeground(colors.lightBlue)
-
--- BigFont element
-local element14 = main:addBigFont()
-    :setPosition(50, 23)
-    :setSize(10, 2)
-    :setText("OOL OS")
-    :setForeground(colors.cyan)
+    :setPosition(1, 17)
+    :setSize(20, 1)
+    :setBackground(colors.cyan)
 
 -- Start the UI
 basalt.run()
